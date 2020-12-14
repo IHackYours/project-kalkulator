@@ -2,7 +2,6 @@
 // baca : No open source jika mo source tag nama gw!
 
 // plese donate IHackYours
-//(function() {
 
 var inputs = [];
 var total = 0;
@@ -10,7 +9,6 @@ var operation = "";
 var memory = 0;
 var current_input;
 
-// Event Listeners - try getting this into a for or foreach loop?
 document.getElementById('subtract').addEventListener('click', subtract);
 document.getElementById('add').addEventListener('click', add);
 document.getElementById('divide').addEventListener('click', divide);
@@ -19,7 +17,7 @@ document.getElementById('equal').addEventListener('click', equal);
 document.getElementById('clearAll').addEventListener('click', clearAll);
 document.getElementById('ce').addEventListener('click', CE);
 document.getElementById('changeSign').addEventListener('click', changeSign);
-document.getElementById('muchWow').addEventListener('click', muchWow);
+document.getElementById('anjing').addEventListener('click', anjing);
 document.getElementById('number1').addEventListener('click', getInput);
 document.getElementById('number2').addEventListener('click', getInput);
 document.getElementById('number3').addEventListener('click', getInput);
@@ -75,7 +73,6 @@ function divide() {
     operation = "/";
 }
 
-// Change Sign -/+ (toggle positive/negative number)
 function changeSign() {
     if (+(inputs.join('')) != 0) {
         inputs[0] = -inputs[0];
@@ -159,21 +156,20 @@ function muchWow() {
     var random_number = Math.floor(Math.random() * 5) + 1
     switch (random_number) {
         case 1:
-            updateDisplay("much WOW!")
+            updateDisplay("apa lu :V")
             break;
         case 2:
-            updateDisplay("such Calc!")
+            updateDisplay("hay lonte :V")
             break;
         case 3:
-            updateDisplay("such smart!")
+            updateDisplay("Hay abjim :V")
             break;
         case 4:
-            updateDisplay("much clever!")
+            updateDisplay("Hay ngetod :V")
             break;
         case 5:
-            updateDisplay("much logic!")
+            updateDisplay("Hay sayang :V")
             break;
     }
 
 }
-//}());
